@@ -1,0 +1,443 @@
+Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_acfc3/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_acfc3.dir/build.make CMakeFiles/cmTC_acfc3.dir/build
+Building C object CMakeFiles/cmTC_acfc3.dir/src.c.o
+/usr/bin/cc -DHAVE_GCC_PREFERRED_STACK_BOUNDARY  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -mpreferred-stack-boundary=2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_acfc3.dir/src.c.o -MF CMakeFiles/cmTC_acfc3.dir/src.c.o.d -o CMakeFiles/cmTC_acfc3.dir/src.c.o -c /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-mpreferred-stack-boundary=2'
+make[1]: *** [CMakeFiles/cmTC_acfc3.dir/src.c.o] Error 1
+make: *** [cmTC_acfc3/fast] Error 2
+
+
+Source file was:
+int x = 0; int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_NO_UNDEFINED failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6429d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_6429d.dir/build.make CMakeFiles/cmTC_6429d.dir/build
+Building C object CMakeFiles/cmTC_6429d.dir/src.c.o
+/usr/bin/cc -DHAVE_NO_UNDEFINED  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -Wl,--no-undefined -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_6429d.dir/src.c.o -MF CMakeFiles/cmTC_6429d.dir/src.c.o.d -o CMakeFiles/cmTC_6429d.dir/src.c.o -c /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp/src.c
+clang: warning: -Wl,--no-undefined: 'linker' input unused [-Wunused-command-line-argument]
+Linking C executable cmTC_6429d
+/Users/florianblanchard/.brew/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6429d.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -Wl,--no-undefined -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_6429d.dir/src.c.o -o cmTC_6429d 
+ld: unknown option: --no-undefined
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_6429d] Error 1
+make: *** [cmTC_6429d/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_fa74f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_fa74f.dir/build.make CMakeFiles/cmTC_fa74f.dir/build
+Building C object CMakeFiles/cmTC_fa74f.dir/src.c.o
+/usr/bin/cc -DHAVE_ALTIVEC_H_HDR  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -maltivec -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_fa74f.dir/src.c.o -MF CMakeFiles/cmTC_fa74f.dir/src.c.o.d -o CMakeFiles/cmTC_fa74f.dir/src.c.o -c /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp/src.c
+clang: warning: argument unused during compilation: '-maltivec' [-Wunused-command-line-argument]
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp/src.c:2:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:13:2: error: "AltiVec support not enabled"
+#error "AltiVec support not enabled"
+ ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:46:19: error: unknown type name 'vector'
+static __inline__ vector signed char __ATTRS_o_ai vec_perm(
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:47:5: error: unknown type name 'vector'
+    vector signed char __a, vector signed char __b, vector unsigned char __c);
+    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:47:29: error: unknown type name 'vector'
+    vector signed char __a, vector signed char __b, vector unsigned char __c);
+                            ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:47:53: error: unknown type name 'vector'
+    vector signed char __a, vector signed char __b, vector unsigned char __c);
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:49:19: error: unknown type name 'vector'
+static __inline__ vector unsigned char __ATTRS_o_ai
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:50:10: error: unknown type name 'vector'
+vec_perm(vector unsigned char __a, vector unsigned char __b,
+         ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:50:36: error: unknown type name 'vector'
+vec_perm(vector unsigned char __a, vector unsigned char __b,
+                                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:51:10: error: unknown type name 'vector'
+         vector unsigned char __c);
+         ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:53:19: error: unknown type name 'vector'
+static __inline__ vector bool char __ATTRS_o_ai
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:53:8: error: 'inline' can only appear on functions
+static __inline__ vector bool char __ATTRS_o_ai
+       ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:53:30: error: expected ';' after top level declarator
+static __inline__ vector bool char __ATTRS_o_ai
+                             ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:54:10: error: unknown type name 'vector'
+vec_perm(vector bool char __a, vector bool char __b, vector unsigned char __c);
+         ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:54:22: error: expected ')'
+vec_perm(vector bool char __a, vector bool char __b, vector unsigned char __c);
+                     ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:54:9: note: to match this '('
+vec_perm(vector bool char __a, vector bool char __b, vector unsigned char __c);
+        ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:56:19: error: unknown type name 'vector'
+static __inline__ vector short __ATTRS_o_ai vec_perm(vector signed short __a,
+                  ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:56:54: error: unknown type name 'vector'
+static __inline__ vector short __ATTRS_o_ai vec_perm(vector signed short __a,
+                                                     ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:57:54: error: unknown type name 'vector'
+                                                     vector signed short __b,
+                                                     ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:58:54: error: unknown type name 'vector'
+                                                     vector unsigned char __c);
+                                                     ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/altivec.h:60:19: error: unknown type name 'vector'
+static __inline__ vector unsigned short __ATTRS_o_ai
+                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make[1]: *** [CMakeFiles/cmTC_fa74f.dir/src.c.o] Error 1
+make: *** [cmTC_fa74f/fast] Error 2
+
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_73d1f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_73d1f.dir/build.make CMakeFiles/cmTC_73d1f.dir/build
+Building C object CMakeFiles/cmTC_73d1f.dir/src.c.o
+/usr/bin/cc -DHAVE_ALTIVEC  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -maltivec -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_73d1f.dir/src.c.o -MF CMakeFiles/cmTC_73d1f.dir/src.c.o.d -o CMakeFiles/cmTC_73d1f.dir/src.c.o -c /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp/src.c
+clang: warning: argument unused during compilation: '-maltivec' [-Wunused-command-line-argument]
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp/src.c:2:11: error: unknown type name 'vector'
+          vector unsigned int vzero() {
+          ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp/src.c:3:22: error: implicit declaration of function 'vec_splat_u32' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+              return vec_splat_u32(0);
+                     ^
+2 errors generated.
+make[1]: *** [CMakeFiles/cmTC_73d1f.dir/src.c.o] Error 1
+make: *** [cmTC_73d1f/fast] Error 2
+
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Determining if the include file malloc.h exists failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_22ac4/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_22ac4.dir/build.make CMakeFiles/cmTC_22ac4.dir/build
+Building C object CMakeFiles/cmTC_22ac4.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_22ac4.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_22ac4.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_22ac4.dir/CheckIncludeFile.c.o -c /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'malloc.h' file not found
+#include <malloc.h>
+         ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_22ac4.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_22ac4/fast] Error 2
+
+
+
+Determining if the function _strrev exists failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4fcd6/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4fcd6.dir/build.make CMakeFiles/cmTC_4fcd6.dir/build
+Building C object CMakeFiles/cmTC_4fcd6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_strrev -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_4fcd6.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_4fcd6.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_4fcd6.dir/CheckFunctionExists.c.o -c /Users/florianblanchard/.brew/Cellar/cmake/3.23.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4fcd6
+/Users/florianblanchard/.brew/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4fcd6.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_strrev -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_4fcd6.dir/CheckFunctionExists.c.o -o cmTC_4fcd6 
+Undefined symbols for architecture x86_64:
+  "__strrev", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_4fcd6] Error 1
+make: *** [cmTC_4fcd6/fast] Error 2
+
+
+
+Determining if the function _strupr exists failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9c0f0/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_9c0f0.dir/build.make CMakeFiles/cmTC_9c0f0.dir/build
+Building C object CMakeFiles/cmTC_9c0f0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_strupr -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_9c0f0.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_9c0f0.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_9c0f0.dir/CheckFunctionExists.c.o -c /Users/florianblanchard/.brew/Cellar/cmake/3.23.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9c0f0
+/Users/florianblanchard/.brew/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c0f0.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_strupr -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_9c0f0.dir/CheckFunctionExists.c.o -o cmTC_9c0f0 
+Undefined symbols for architecture x86_64:
+  "__strupr", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_9c0f0] Error 1
+make: *** [cmTC_9c0f0/fast] Error 2
+
+
+
+Determining if the function _strlwr exists failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e69ca/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e69ca.dir/build.make CMakeFiles/cmTC_e69ca.dir/build
+Building C object CMakeFiles/cmTC_e69ca.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_strlwr -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_e69ca.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_e69ca.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_e69ca.dir/CheckFunctionExists.c.o -c /Users/florianblanchard/.brew/Cellar/cmake/3.23.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e69ca
+/Users/florianblanchard/.brew/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e69ca.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_strlwr -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e69ca.dir/CheckFunctionExists.c.o -o cmTC_e69ca 
+Undefined symbols for architecture x86_64:
+  "__strlwr", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_e69ca] Error 1
+make: *** [cmTC_e69ca/fast] Error 2
+
+
+
+Determining if the function itoa exists failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ea162/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ea162.dir/build.make CMakeFiles/cmTC_ea162.dir/build
+Building C object CMakeFiles/cmTC_ea162.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=itoa -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_ea162.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_ea162.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_ea162.dir/CheckFunctionExists.c.o -c /Users/florianblanchard/.brew/Cellar/cmake/3.23.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ea162
+/Users/florianblanchard/.brew/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea162.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=itoa -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ea162.dir/CheckFunctionExists.c.o -o cmTC_ea162 
+Undefined symbols for architecture x86_64:
+  "_itoa", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_ea162] Error 1
+make: *** [cmTC_ea162/fast] Error 2
+
+
+
+Determining if the function _ltoa exists failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_14fdc/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_14fdc.dir/build.make CMakeFiles/cmTC_14fdc.dir/build
+Building C object CMakeFiles/cmTC_14fdc.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_ltoa -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_14fdc.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_14fdc.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_14fdc.dir/CheckFunctionExists.c.o -c /Users/florianblanchard/.brew/Cellar/cmake/3.23.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_14fdc
+/Users/florianblanchard/.brew/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14fdc.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_ltoa -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_14fdc.dir/CheckFunctionExists.c.o -o cmTC_14fdc 
+Undefined symbols for architecture x86_64:
+  "__ltoa", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_14fdc] Error 1
+make: *** [cmTC_14fdc/fast] Error 2
+
+
+
+Determining if the function _uitoa exists failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2a750/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_2a750.dir/build.make CMakeFiles/cmTC_2a750.dir/build
+Building C object CMakeFiles/cmTC_2a750.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_uitoa -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_2a750.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_2a750.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_2a750.dir/CheckFunctionExists.c.o -c /Users/florianblanchard/.brew/Cellar/cmake/3.23.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2a750
+/Users/florianblanchard/.brew/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a750.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_uitoa -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_2a750.dir/CheckFunctionExists.c.o -o cmTC_2a750 
+Undefined symbols for architecture x86_64:
+  "__uitoa", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_2a750] Error 1
+make: *** [cmTC_2a750/fast] Error 2
+
+
+
+Determining if the function _ultoa exists failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_fa3df/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_fa3df.dir/build.make CMakeFiles/cmTC_fa3df.dir/build
+Building C object CMakeFiles/cmTC_fa3df.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_ultoa -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_fa3df.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_fa3df.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_fa3df.dir/CheckFunctionExists.c.o -c /Users/florianblanchard/.brew/Cellar/cmake/3.23.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fa3df
+/Users/florianblanchard/.brew/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa3df.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_ultoa -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_fa3df.dir/CheckFunctionExists.c.o -o cmTC_fa3df 
+Undefined symbols for architecture x86_64:
+  "__ultoa", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_fa3df] Error 1
+make: *** [cmTC_fa3df/fast] Error 2
+
+
+
+Determining if the function _i64toa exists failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_aae90/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_aae90.dir/build.make CMakeFiles/cmTC_aae90.dir/build
+Building C object CMakeFiles/cmTC_aae90.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_i64toa -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_aae90.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_aae90.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_aae90.dir/CheckFunctionExists.c.o -c /Users/florianblanchard/.brew/Cellar/cmake/3.23.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_aae90
+/Users/florianblanchard/.brew/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aae90.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_i64toa -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_aae90.dir/CheckFunctionExists.c.o -o cmTC_aae90 
+Undefined symbols for architecture x86_64:
+  "__i64toa", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_aae90] Error 1
+make: *** [cmTC_aae90/fast] Error 2
+
+
+
+Determining if the function _ui64toa exists failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_00c5e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_00c5e.dir/build.make CMakeFiles/cmTC_00c5e.dir/build
+Building C object CMakeFiles/cmTC_00c5e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_ui64toa -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_00c5e.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_00c5e.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_00c5e.dir/CheckFunctionExists.c.o -c /Users/florianblanchard/.brew/Cellar/cmake/3.23.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_00c5e
+/Users/florianblanchard/.brew/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00c5e.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_ui64toa -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_00c5e.dir/CheckFunctionExists.c.o -o cmTC_00c5e 
+Undefined symbols for architecture x86_64:
+  "__ui64toa", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_00c5e] Error 1
+make: *** [cmTC_00c5e/fast] Error 2
+
+
+
+Determining if the function _stricmp exists failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_518f0/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_518f0.dir/build.make CMakeFiles/cmTC_518f0.dir/build
+Building C object CMakeFiles/cmTC_518f0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_stricmp -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_518f0.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_518f0.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_518f0.dir/CheckFunctionExists.c.o -c /Users/florianblanchard/.brew/Cellar/cmake/3.23.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_518f0
+/Users/florianblanchard/.brew/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_518f0.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_stricmp -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_518f0.dir/CheckFunctionExists.c.o -o cmTC_518f0 
+Undefined symbols for architecture x86_64:
+  "__stricmp", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_518f0] Error 1
+make: *** [cmTC_518f0/fast] Error 2
+
+
+
+Determining if the function _strnicmp exists failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_04c95/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_04c95.dir/build.make CMakeFiles/cmTC_04c95.dir/build
+Building C object CMakeFiles/cmTC_04c95.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_strnicmp -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_04c95.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_04c95.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_04c95.dir/CheckFunctionExists.c.o -c /Users/florianblanchard/.brew/Cellar/cmake/3.23.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_04c95
+/Users/florianblanchard/.brew/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04c95.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=_strnicmp -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_04c95.dir/CheckFunctionExists.c.o -o cmTC_04c95 
+Undefined symbols for architecture x86_64:
+  "__strnicmp", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_04c95] Error 1
+make: *** [cmTC_04c95/fast] Error 2
+
+
+
+Determining if the function fseeko64 exists failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8806a/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8806a.dir/build.make CMakeFiles/cmTC_8806a.dir/build
+Building C object CMakeFiles/cmTC_8806a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=fseeko64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_8806a.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_8806a.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_8806a.dir/CheckFunctionExists.c.o -c /Users/florianblanchard/.brew/Cellar/cmake/3.23.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8806a
+/Users/florianblanchard/.brew/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8806a.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=fseeko64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_8806a.dir/CheckFunctionExists.c.o -o cmTC_8806a 
+Undefined symbols for architecture x86_64:
+  "_fseeko64", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_8806a] Error 1
+make: *** [cmTC_8806a/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_SEM_TIMEDWAIT failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e8b5b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e8b5b.dir/build.make CMakeFiles/cmTC_e8b5b.dir/build
+Building C object CMakeFiles/cmTC_e8b5b.dir/src.c.o
+/usr/bin/cc -DHAVE_SEM_TIMEDWAIT  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -D_THREAD_SAFE -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_e8b5b.dir/src.c.o -MF CMakeFiles/cmTC_e8b5b.dir/src.c.o.d -o CMakeFiles/cmTC_e8b5b.dir/src.c.o -c /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp/src.c
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp/src.c:5:19: error: implicit declaration of function 'sem_timedwait' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+                  sem_timedwait(NULL, NULL);
+                  ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp/src.c:5:19: note: did you mean 'sem_trywait'?
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/semaphore.h:58:5: note: 'sem_trywait' declared here
+int sem_trywait(sem_t *);
+    ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_e8b5b.dir/src.c.o] Error 1
+make: *** [cmTC_e8b5b/fast] Error 2
+
+
+Source file was:
+
+              #include <pthread.h>
+              #include <semaphore.h>
+              int main(int argc, char **argv) {
+                  sem_timedwait(NULL, NULL);
+                  return 0;
+              }
+Performing C SOURCE FILE Test HAVE_PTHREAD_NP_H failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_22f5d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_22f5d.dir/build.make CMakeFiles/cmTC_22f5d.dir/build
+Building C object CMakeFiles/cmTC_22f5d.dir/src.c.o
+/usr/bin/cc -DHAVE_PTHREAD_NP_H  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64  -D_THREAD_SAFE -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_22f5d.dir/src.c.o -MF CMakeFiles/cmTC_22f5d.dir/src.c.o.d -o CMakeFiles/cmTC_22f5d.dir/src.c.o -c /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp/src.c
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp/src.c:3:20: fatal error: 'pthread_np.h' file not found
+          #include <pthread_np.h>
+                   ^~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_22f5d.dir/src.c.o] Error 1
+make: *** [cmTC_22f5d/fast] Error 2
+
+
+Source file was:
+
+          #include <pthread.h>
+          #include <pthread_np.h>
+          int main(int argc, char** argv) { return 0; }
+Determining if the function pthread_set_name_np exists failed with the following output:
+Change Dir: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7a471/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7a471.dir/build.make CMakeFiles/cmTC_7a471.dir/build
+Building C object CMakeFiles/cmTC_7a471.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=pthread_set_name_np  -D_THREAD_SAFE -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_7a471.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_7a471.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_7a471.dir/CheckFunctionExists.c.o -c /Users/florianblanchard/.brew/Cellar/cmake/3.23.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7a471
+/Users/florianblanchard/.brew/Cellar/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a471.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -fPIC -m64 -arch x86_64 -DCHECK_FUNCTION_EXISTS=pthread_set_name_np  -D_THREAD_SAFE -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7a471.dir/CheckFunctionExists.c.o -o cmTC_7a471 
+Undefined symbols for architecture x86_64:
+  "_pthread_set_name_np", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_7a471] Error 1
+make: *** [cmTC_7a471/fast] Error 2
+
+
+

@@ -1,0 +1,9 @@
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/SDL2main.dir
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/SDL2-static.dir
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/uninstall.dir
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/edit_cache.dir
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/rebuild_cache.dir
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/list_install_components.dir
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/install.dir
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/install/local.dir
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/build/CMakeFiles/install/strip.dir

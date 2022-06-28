@@ -1,0 +1,1085 @@
+CMake Deprecation Warning at CMakeLists.txt:5 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_ASM_COMPILER
+    CMAKE_ASM_FLAGS
+    CMAKE_CXX_COMPILER
+    CMAKE_CXX_FLAGS
+
+
+make: warning: -jN forced in submake: disabling jobserver mode.
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/atomic/SDL_atomic.c:92:23: warning: 'OSAtomicCompareAndSwap32Barrier' is deprecated: first deprecated in macOS 10.12 - Use atomic_compare_exchange_strong() from <stdatomic.h> instead [-Wdeprecated-declarations]
+    return (SDL_bool) OSAtomicCompareAndSwap32Barrier(oldval, newval, &a->value);
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/libkern/OSAtomicDeprecated.h:519:9: note: 'OSAtomicCompareAndSwap32Barrier' has been explicitly marked deprecated here
+bool    OSAtomicCompareAndSwap32Barrier( int32_t __oldValue, int32_t __newValue, volatile int32_t *__theValue );
+        ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/atomic/SDL_atomic.c:123:23: warning: 'OSAtomicCompareAndSwap64Barrier' is deprecated: first deprecated in macOS 10.12 - Use atomic_compare_exchange_strong() from <stdatomic.h> instead [-Wdeprecated-declarations]
+    return (SDL_bool) OSAtomicCompareAndSwap64Barrier((int64_t)oldval, (int64_t)newval, (int64_t*) a);
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/libkern/OSAtomicDeprecated.h:646:9: note: 'OSAtomicCompareAndSwap64Barrier' has been explicitly marked deprecated here
+bool    OSAtomicCompareAndSwap64Barrier( int64_t __oldValue, int64_t __newValue,
+        ^
+2 warnings generated.
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/haptic/darwin/SDL_syshaptic.c:171:43: warning: 'kIOMasterPortDefault' is deprecated: first deprecated in macOS 12.0 [-Wdeprecated-declarations]
+    result = IOServiceGetMatchingServices(kIOMasterPortDefault, match, &iter);
+                                          ^~~~~~~~~~~~~~~~~~~~
+                                          kIOMainPortDefault
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/IOKit.framework/Headers/IOKitLib.h:123:19: note: 'kIOMasterPortDefault' has been explicitly marked deprecated here
+const mach_port_t kIOMasterPortDefault
+                  ^
+1 warning generated.
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/audio/coreaudio/SDL_coreaudio.m:46:5: warning: 'kAudioObjectPropertyElementMaster' is deprecated: first deprecated in macOS 12.0 [-Wdeprecated-declarations]
+    kAudioObjectPropertyElementMaster
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    kAudioObjectPropertyElementMain
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreAudio.framework/Headers/AudioHardwareBase.h:208:5: note: 'kAudioObjectPropertyElementMaster' has been explicitly marked deprecated here
+    kAudioObjectPropertyElementMaster API_DEPRECATED_WITH_REPLACEMENT("kAudioObjectPropertyElementMain", macos(10.0, 12.0), ios(2.0, 15.0), watchos(1.0, 8.0), tvos(9.0, 15.0)) = kAudioObjectPropertyElementMain
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/audio/coreaudio/SDL_coreaudio.m:122:13: warning: 'kAudioObjectPropertyElementMaster' is deprecated: first deprecated in macOS 12.0 [-Wdeprecated-declarations]
+            kAudioObjectPropertyElementMaster
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            kAudioObjectPropertyElementMain
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreAudio.framework/Headers/AudioHardwareBase.h:208:5: note: 'kAudioObjectPropertyElementMaster' has been explicitly marked deprecated here
+    kAudioObjectPropertyElementMaster API_DEPRECATED_WITH_REPLACEMENT("kAudioObjectPropertyElementMain", macos(10.0, 12.0), ios(2.0, 15.0), watchos(1.0, 8.0), tvos(9.0, 15.0)) = kAudioObjectPropertyElementMain
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/audio/coreaudio/SDL_coreaudio.m:128:13: warning: 'kAudioObjectPropertyElementMaster' is deprecated: first deprecated in macOS 12.0 [-Wdeprecated-declarations]
+            kAudioObjectPropertyElementMaster
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            kAudioObjectPropertyElementMain
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreAudio.framework/Headers/AudioHardwareBase.h:208:5: note: 'kAudioObjectPropertyElementMaster' has been explicitly marked deprecated here
+    kAudioObjectPropertyElementMaster API_DEPRECATED_WITH_REPLACEMENT("kAudioObjectPropertyElementMain", macos(10.0, 12.0), ios(2.0, 15.0), watchos(1.0, 8.0), tvos(9.0, 15.0)) = kAudioObjectPropertyElementMain
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/audio/coreaudio/SDL_coreaudio.m:480:5: warning: 'kAudioObjectPropertyElementMaster' is deprecated: first deprecated in macOS 12.0 [-Wdeprecated-declarations]
+    kAudioObjectPropertyElementMaster
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    kAudioObjectPropertyElementMain
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreAudio.framework/Headers/AudioHardwareBase.h:208:5: note: 'kAudioObjectPropertyElementMaster' has been explicitly marked deprecated here
+    kAudioObjectPropertyElementMaster API_DEPRECATED_WITH_REPLACEMENT("kAudioObjectPropertyElementMain", macos(10.0, 12.0), ios(2.0, 15.0), watchos(1.0, 8.0), tvos(9.0, 15.0)) = kAudioObjectPropertyElementMain
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/audio/coreaudio/SDL_coreaudio.m:572:9: warning: 'kAudioObjectPropertyElementMaster' is deprecated: first deprecated in macOS 12.0 [-Wdeprecated-declarations]
+        kAudioObjectPropertyElementMaster
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        kAudioObjectPropertyElementMain
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreAudio.framework/Headers/AudioHardwareBase.h:208:5: note: 'kAudioObjectPropertyElementMaster' has been explicitly marked deprecated here
+    kAudioObjectPropertyElementMaster API_DEPRECATED_WITH_REPLACEMENT("kAudioObjectPropertyElementMain", macos(10.0, 12.0), ios(2.0, 15.0), watchos(1.0, 8.0), tvos(9.0, 15.0)) = kAudioObjectPropertyElementMain
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/audio/coreaudio/SDL_coreaudio.m:637:9: warning: 'kAudioObjectPropertyElementMaster' is deprecated: first deprecated in macOS 12.0 [-Wdeprecated-declarations]
+        kAudioObjectPropertyElementMaster
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        kAudioObjectPropertyElementMain
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreAudio.framework/Headers/AudioHardwareBase.h:208:5: note: 'kAudioObjectPropertyElementMaster' has been explicitly marked deprecated here
+    kAudioObjectPropertyElementMaster API_DEPRECATED_WITH_REPLACEMENT("kAudioObjectPropertyElementMain", macos(10.0, 12.0), ios(2.0, 15.0), watchos(1.0, 8.0), tvos(9.0, 15.0)) = kAudioObjectPropertyElementMain
+    ^
+6 warnings generated.
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:36:31: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+@interface SDLOpenGLContext : NSOpenGLContext {
+                              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:41:23: warning: 'NSOpenGLPixelFormat' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+- (id)initWithFormat:(NSOpenGLPixelFormat *)format
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:115:12: note: 'NSOpenGLPixelFormat' has been explicitly marked deprecated here
+@interface NSOpenGLPixelFormat : NSObject <NSCoding>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:42:23: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+        shareContext:(NSOpenGLContext *)share;
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaclipboard.m:25:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:36:31: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+@interface SDLOpenGLContext : NSOpenGLContext {
+                              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaclipboard.m:25:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:41:23: warning: 'NSOpenGLPixelFormat' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+- (id)initWithFormat:(NSOpenGLPixelFormat *)format
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:115:12: note: 'NSOpenGLPixelFormat' has been explicitly marked deprecated here
+@interface NSOpenGLPixelFormat : NSObject <NSCoding>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaclipboard.m:25:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:42:23: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+        shareContext:(NSOpenGLContext *)share;
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+3 warnings generated.
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:58:14: warning: 'NSLeftMouseDown' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSLeftMouseDown:
+             ^~~~~~~~~~~~~~~
+             NSEventTypeLeftMouseDown
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:65:26: note: 'NSLeftMouseDown' has been explicitly marked deprecated here
+static const NSEventType NSLeftMouseDown        API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeLeftMouseDown", macos(10.0,10.12)) = NSEventTypeLeftMouseDown;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:59:14: warning: 'NSOtherMouseDown' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSOtherMouseDown:
+             ^~~~~~~~~~~~~~~~
+             NSEventTypeOtherMouseDown
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:85:26: note: 'NSOtherMouseDown' has been explicitly marked deprecated here
+static const NSEventType NSOtherMouseDown       API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeOtherMouseDown", macos(10.0,10.12)) = NSEventTypeOtherMouseDown;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:60:14: warning: 'NSRightMouseDown' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSRightMouseDown:
+             ^~~~~~~~~~~~~~~~
+             NSEventTypeRightMouseDown
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:67:26: note: 'NSRightMouseDown' has been explicitly marked deprecated here
+static const NSEventType NSRightMouseDown       API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeRightMouseDown", macos(10.0,10.12)) = NSEventTypeRightMouseDown;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:61:14: warning: 'NSLeftMouseUp' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSLeftMouseUp:
+             ^~~~~~~~~~~~~
+             NSEventTypeLeftMouseUp
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:66:26: note: 'NSLeftMouseUp' has been explicitly marked deprecated here
+static const NSEventType NSLeftMouseUp          API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeLeftMouseUp", macos(10.0,10.12)) = NSEventTypeLeftMouseUp;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:62:14: warning: 'NSOtherMouseUp' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSOtherMouseUp:
+             ^~~~~~~~~~~~~~
+             NSEventTypeOtherMouseUp
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:86:26: note: 'NSOtherMouseUp' has been explicitly marked deprecated here
+static const NSEventType NSOtherMouseUp         API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeOtherMouseUp", macos(10.0,10.12)) = NSEventTypeOtherMouseUp;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:63:14: warning: 'NSRightMouseUp' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSRightMouseUp:
+             ^~~~~~~~~~~~~~
+             NSEventTypeRightMouseUp
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:68:26: note: 'NSRightMouseUp' has been explicitly marked deprecated here
+static const NSEventType NSRightMouseUp         API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeRightMouseUp", macos(10.0,10.12)) = NSEventTypeRightMouseUp;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:64:14: warning: 'NSLeftMouseDragged' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSLeftMouseDragged:
+             ^~~~~~~~~~~~~~~~~~
+             NSEventTypeLeftMouseDragged
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:70:26: note: 'NSLeftMouseDragged' has been explicitly marked deprecated here
+static const NSEventType NSLeftMouseDragged     API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeLeftMouseDragged", macos(10.0,10.12)) = NSEventTypeLeftMouseDragged;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:65:14: warning: 'NSRightMouseDragged' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSRightMouseDragged:
+             ^~~~~~~~~~~~~~~~~~~
+             NSEventTypeRightMouseDragged
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:71:26: note: 'NSRightMouseDragged' has been explicitly marked deprecated here
+static const NSEventType NSRightMouseDragged    API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeRightMouseDragged", macos(10.0,10.12)) = NSEventTypeRightMouseDragged;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:66:14: warning: 'NSOtherMouseDragged' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSOtherMouseDragged: /* usually middle mouse dragged */
+             ^~~~~~~~~~~~~~~~~~~
+             NSEventTypeOtherMouseDragged
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:87:26: note: 'NSOtherMouseDragged' has been explicitly marked deprecated here
+static const NSEventType NSOtherMouseDragged    API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeOtherMouseDragged", macos(10.0,10.12)) = NSEventTypeOtherMouseDragged;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:67:14: warning: 'NSMouseMoved' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSMouseMoved:
+             ^~~~~~~~~~~~
+             NSEventTypeMouseMoved
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:69:26: note: 'NSMouseMoved' has been explicitly marked deprecated here
+static const NSEventType NSMouseMoved           API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeMouseMoved", macos(10.0,10.12)) = NSEventTypeMouseMoved;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:68:14: warning: 'NSScrollWheel' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSScrollWheel:
+             ^~~~~~~~~~~~~
+             NSEventTypeScrollWheel
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:82:26: note: 'NSScrollWheel' has been explicitly marked deprecated here
+static const NSEventType NSScrollWheel          API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeScrollWheel", macos(10.0,10.12)) = NSEventTypeScrollWheel;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:71:14: warning: 'NSKeyDown' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSKeyDown:
+             ^~~~~~~~~
+             NSEventTypeKeyDown
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:74:26: note: 'NSKeyDown' has been explicitly marked deprecated here
+static const NSEventType NSKeyDown              API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeKeyDown", macos(10.0,10.12)) = NSEventTypeKeyDown;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:72:14: warning: 'NSKeyUp' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSKeyUp:
+             ^~~~~~~
+             NSEventTypeKeyUp
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:75:26: note: 'NSKeyUp' has been explicitly marked deprecated here
+static const NSEventType NSKeyUp                API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeKeyUp", macos(10.0,10.12)) = NSEventTypeKeyUp;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:73:14: warning: 'NSFlagsChanged' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSFlagsChanged:
+             ^~~~~~~~~~~~~~
+             NSEventTypeFlagsChanged
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:76:26: note: 'NSFlagsChanged' has been explicitly marked deprecated here
+static const NSEventType NSFlagsChanged         API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeFlagsChanged", macos(10.0,10.12)) = NSEventTypeFlagsChanged;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:292:45: warning: 'NSAlternateKeyMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    [menuItem setKeyEquivalentModifierMask:(NSAlternateKeyMask|NSCommandKeyMask)];
+                                            ^~~~~~~~~~~~~~~~~~
+                                            NSEventModifierFlagOption
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:180:35: note: 'NSAlternateKeyMask' has been explicitly marked deprecated here
+static const NSEventModifierFlags NSAlternateKeyMask          API_DEPRECATED_WITH_REPLACEMENT("NSEventModifierFlagOption", macos(10.0,10.12)) = NSEventModifierFlagOption;
+                                  ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:292:64: warning: 'NSCommandKeyMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    [menuItem setKeyEquivalentModifierMask:(NSAlternateKeyMask|NSCommandKeyMask)];
+                                                               ^~~~~~~~~~~~~~~~
+                                                               NSEventModifierFlagCommand
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:181:35: note: 'NSCommandKeyMask' has been explicitly marked deprecated here
+static const NSEventModifierFlags NSCommandKeyMask            API_DEPRECATED_WITH_REPLACEMENT("NSEventModifierFlagCommand", macos(10.0,10.12)) = NSEventModifierFlagCommand;
+                                  ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:338:48: warning: 'NSControlKeyMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        [menuItem setKeyEquivalentModifierMask:NSControlKeyMask | NSCommandKeyMask];
+                                               ^~~~~~~~~~~~~~~~
+                                               NSEventModifierFlagControl
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:179:35: note: 'NSControlKeyMask' has been explicitly marked deprecated here
+static const NSEventModifierFlags NSControlKeyMask            API_DEPRECATED_WITH_REPLACEMENT("NSEventModifierFlagControl", macos(10.0,10.12)) = NSEventModifierFlagControl;
+                                  ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:338:67: warning: 'NSCommandKeyMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        [menuItem setKeyEquivalentModifierMask:NSControlKeyMask | NSCommandKeyMask];
+                                                                  ^~~~~~~~~~~~~~~~
+                                                                  NSEventModifierFlagCommand
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:181:35: note: 'NSCommandKeyMask' has been explicitly marked deprecated here
+static const NSEventModifierFlags NSCommandKeyMask            API_DEPRECATED_WITH_REPLACEMENT("NSEventModifierFlagCommand", macos(10.0,10.12)) = NSEventModifierFlagCommand;
+                                  ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:403:13: warning: 'UpdateSystemActivity' is deprecated: first deprecated in macOS 10.8 - No longer supported [-Wdeprecated-declarations]
+            UpdateSystemActivity(UsrActivity);
+            ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/OSServices.framework/Headers/Power.h:367:1: note: 'UpdateSystemActivity' has been explicitly marked deprecated here
+UpdateSystemActivity(UInt8 activity)                          API_DEPRECATED("No longer supported", macos(10.0,10.8) ) API_UNAVAILABLE( ios, tvos, watchos );
+^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaevents.m:409:55: warning: 'NSAnyEventMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        NSEvent *event = [NSApp nextEventMatchingMask:NSAnyEventMask untilDate:[NSDate distantPast] inMode:NSDefaultRunLoopMode dequeue:YES ];
+                                                      ^~~~~~~~~~~~~~
+                                                      NSEventMaskAny
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:158:26: note: 'NSAnyEventMask' has been explicitly marked deprecated here
+static const NSEventMask NSAnyEventMask                 API_DEPRECATED_WITH_REPLACEMENT("NSEventMaskAny", macos(10.0,10.12)) = NSUIntegerMax;
+                         ^
+23 warnings generated.
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoakeyboard.m:25:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:36:31: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+@interface SDLOpenGLContext : NSOpenGLContext {
+                              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoakeyboard.m:25:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:41:23: warning: 'NSOpenGLPixelFormat' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+- (id)initWithFormat:(NSOpenGLPixelFormat *)format
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:115:12: note: 'NSOpenGLPixelFormat' has been explicitly marked deprecated here
+@interface NSOpenGLPixelFormat : NSObject <NSCoding>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoakeyboard.m:25:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:42:23: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+        shareContext:(NSOpenGLContext *)share;
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoakeyboard.m:149:31: warning: 'convertBaseToScreen:' is deprecated: first deprecated in macOS 10.7 - Use -convertRectToScreen: or -convertPointToScreen: instead [-Wdeprecated-declarations]
+        rect.origin = [window convertBaseToScreen:rect.origin];
+                              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:842:1: note: 'convertBaseToScreen:' has been explicitly marked deprecated here
+- (NSPoint)convertBaseToScreen:(NSPoint)point API_DEPRECATED("Use -convertRectToScreen: or -convertPointToScreen: instead", macos(10.0,10.7));
+^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoakeyboard.m:463:23: warning: 'NSShiftKeyMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    for (i = 0, bit = NSShiftKeyMask; bit <= NSCommandKeyMask; bit <<= 1, ++i) {
+                      ^~~~~~~~~~~~~~
+                      NSEventModifierFlagShift
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:178:35: note: 'NSShiftKeyMask' has been explicitly marked deprecated here
+static const NSEventModifierFlags NSShiftKeyMask              API_DEPRECATED_WITH_REPLACEMENT("NSEventModifierFlagShift", macos(10.0,10.12)) = NSEventModifierFlagShift;
+                                  ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoakeyboard.m:463:46: warning: 'NSCommandKeyMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    for (i = 0, bit = NSShiftKeyMask; bit <= NSCommandKeyMask; bit <<= 1, ++i) {
+                                             ^~~~~~~~~~~~~~~~
+                                             NSEventModifierFlagCommand
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:181:35: note: 'NSCommandKeyMask' has been explicitly marked deprecated here
+static const NSEventModifierFlags NSCommandKeyMask            API_DEPRECATED_WITH_REPLACEMENT("NSEventModifierFlagCommand", macos(10.0,10.12)) = NSEventModifierFlagCommand;
+                                  ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoakeyboard.m:584:58: warning: 'NSAlphaShiftKeyMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    SDL_ToggleModState(KMOD_CAPS, (data->modifierFlags & NSAlphaShiftKeyMask) != 0);
+                                                         ^~~~~~~~~~~~~~~~~~~
+                                                         NSEventModifierFlagCapsLock
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:177:35: note: 'NSAlphaShiftKeyMask' has been explicitly marked deprecated here
+static const NSEventModifierFlags NSAlphaShiftKeyMask         API_DEPRECATED_WITH_REPLACEMENT("NSEventModifierFlagCapsLock", macos(10.0,10.12)) = NSEventModifierFlagCapsLock;
+                                  ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoakeyboard.m:673:10: warning: 'NSKeyDown' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    case NSKeyDown:
+         ^~~~~~~~~
+         NSEventTypeKeyDown
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:74:26: note: 'NSKeyDown' has been explicitly marked deprecated here
+static const NSEventType NSKeyDown              API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeKeyDown", macos(10.0,10.12)) = NSEventTypeKeyDown;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoakeyboard.m:697:10: warning: 'NSKeyUp' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    case NSKeyUp:
+         ^~~~~~~
+         NSEventTypeKeyUp
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:75:26: note: 'NSKeyUp' has been explicitly marked deprecated here
+static const NSEventType NSKeyUp                API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeKeyUp", macos(10.0,10.12)) = NSEventTypeKeyUp;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoakeyboard.m:700:10: warning: 'NSFlagsChanged' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    case NSFlagsChanged:
+         ^~~~~~~~~~~~~~
+         NSEventTypeFlagsChanged
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:76:26: note: 'NSFlagsChanged' has been explicitly marked deprecated here
+static const NSEventType NSFlagsChanged         API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeFlagsChanged", macos(10.0,10.12)) = NSEventTypeFlagsChanged;
+                         ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamessagebox.m:28:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:36:31: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+@interface SDLOpenGLContext : NSOpenGLContext {
+                              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamessagebox.m:28:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:41:23: warning: 'NSOpenGLPixelFormat' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+- (id)initWithFormat:(NSOpenGLPixelFormat *)format
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:115:12: note: 'NSOpenGLPixelFormat' has been explicitly marked deprecated here
+@interface NSOpenGLPixelFormat : NSObject <NSCoding>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamessagebox.m:28:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:42:23: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+        shareContext:(NSOpenGLContext *)share;
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamessagebox.m:60:16: warning: 'beginSheetModalForWindow:modalDelegate:didEndSelector:contextInfo:' is deprecated: first deprecated in macOS 10.10 - Use -beginSheetModalForWindow:completionHandler: instead [-Wdeprecated-declarations]
+        [alert beginSheetModalForWindow:nswindow modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:nil];
+               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSAlert.h:137:1: note: 'beginSheetModalForWindow:modalDelegate:didEndSelector:contextInfo:' has been explicitly marked deprecated here
+- (void)beginSheetModalForWindow:(NSWindow *)window modalDelegate:(nullable id)delegate didEndSelector:(nullable SEL)didEndSelector contextInfo:(nullable void *)contextInfo API_DEPRECATED("Use -beginSheetModalForWindow:completionHandler: instead", macos(10.3,10.10));
+^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamessagebox.m:89:30: warning: 'NSCriticalAlertStyle' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        [alert setAlertStyle:NSCriticalAlertStyle];
+                             ^~~~~~~~~~~~~~~~~~~~
+                             NSAlertStyleCritical
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSAlert.h:143:27: note: 'NSCriticalAlertStyle' has been explicitly marked deprecated here
+static const NSAlertStyle NSCriticalAlertStyle API_DEPRECATED_WITH_REPLACEMENT("NSAlertStyleCritical", macos(10.3,10.12)) = NSAlertStyleCritical;
+                          ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamessagebox.m:91:30: warning: 'NSWarningAlertStyle' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        [alert setAlertStyle:NSWarningAlertStyle];
+                             ^~~~~~~~~~~~~~~~~~~
+                             NSAlertStyleWarning
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSAlert.h:141:27: note: 'NSWarningAlertStyle' has been explicitly marked deprecated here
+static const NSAlertStyle NSWarningAlertStyle API_DEPRECATED_WITH_REPLACEMENT("NSAlertStyleWarning", macos(10.3,10.12)) = NSAlertStyleWarning;
+                          ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamessagebox.m:93:30: warning: 'NSInformationalAlertStyle' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        [alert setAlertStyle:NSInformationalAlertStyle];
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~
+                             NSAlertStyleInformational
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSAlert.h:142:27: note: 'NSInformationalAlertStyle' has been explicitly marked deprecated here
+static const NSAlertStyle NSInformationalAlertStyle API_DEPRECATED_WITH_REPLACEMENT("NSAlertStyleInformational", macos(10.3,10.12)) = NSAlertStyleInformational;
+                          ^
+7 warnings generated.
+10 warnings generated.
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamodes.m:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:36:31: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+@interface SDLOpenGLContext : NSOpenGLContext {
+                              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamodes.m:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:41:23: warning: 'NSOpenGLPixelFormat' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+- (id)initWithFormat:(NSOpenGLPixelFormat *)format
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:115:12: note: 'NSOpenGLPixelFormat' has been explicitly marked deprecated here
+@interface NSOpenGLPixelFormat : NSObject <NSCoding>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamodes.m:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:42:23: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+        shareContext:(NSOpenGLContext *)share;
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamouse.m:27:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamouse.h:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:36:31: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+@interface SDLOpenGLContext : NSOpenGLContext {
+                              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamouse.m:27:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamouse.h:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:41:23: warning: 'NSOpenGLPixelFormat' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+- (id)initWithFormat:(NSOpenGLPixelFormat *)format
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:115:12: note: 'NSOpenGLPixelFormat' has been explicitly marked deprecated here
+@interface NSOpenGLPixelFormat : NSObject <NSCoding>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamouse.m:27:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamouse.h:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:42:23: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+        shareContext:(NSOpenGLContext *)share;
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamouse.m:366:14: warning: 'NSMouseMoved' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSMouseMoved:
+             ^~~~~~~~~~~~
+             NSEventTypeMouseMoved
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:69:26: note: 'NSMouseMoved' has been explicitly marked deprecated here
+static const NSEventType NSMouseMoved           API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeMouseMoved", macos(10.0,10.12)) = NSEventTypeMouseMoved;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamouse.m:367:14: warning: 'NSLeftMouseDragged' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSLeftMouseDragged:
+             ^~~~~~~~~~~~~~~~~~
+             NSEventTypeLeftMouseDragged
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:70:26: note: 'NSLeftMouseDragged' has been explicitly marked deprecated here
+static const NSEventType NSLeftMouseDragged     API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeLeftMouseDragged", macos(10.0,10.12)) = NSEventTypeLeftMouseDragged;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamouse.m:368:14: warning: 'NSRightMouseDragged' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSRightMouseDragged:
+             ^~~~~~~~~~~~~~~~~~~
+             NSEventTypeRightMouseDragged
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:71:26: note: 'NSRightMouseDragged' has been explicitly marked deprecated here
+static const NSEventType NSRightMouseDragged    API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeRightMouseDragged", macos(10.0,10.12)) = NSEventTypeRightMouseDragged;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamouse.m:369:14: warning: 'NSOtherMouseDragged' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        case NSOtherMouseDragged:
+             ^~~~~~~~~~~~~~~~~~~
+             NSEventTypeOtherMouseDragged
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:87:26: note: 'NSOtherMouseDragged' has been explicitly marked deprecated here
+static const NSEventType NSOtherMouseDragged    API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeOtherMouseDragged", macos(10.0,10.12)) = NSEventTypeOtherMouseDragged;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamodes.m:118:11: warning: 'CGDisplayModeCopyPixelEncoding' is deprecated: first deprecated in macOS 10.11 - No longer supported [-Wdeprecated-declarations]
+    fmt = CGDisplayModeCopyPixelEncoding(vidmode);
+          ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDirectDisplay.h:177:34: note: 'CGDisplayModeCopyPixelEncoding' has been explicitly marked deprecated here
+CG_EXTERN CFStringRef __nullable CGDisplayModeCopyPixelEncoding(
+                                 ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamodes.m:172:64: warning: 'CGDisplayIOServicePort' is deprecated: first deprecated in macOS 10.9 - No longer supported [-Wdeprecated-declarations]
+    CFDictionaryRef deviceInfo = IODisplayCreateInfoDictionary(CGDisplayIOServicePort(displayID), kIODisplayOnlyPreferredName);
+                                                               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDisplayConfiguration.h:372:24: note: 'CGDisplayIOServicePort' has been explicitly marked deprecated here
+CG_EXTERN io_service_t CGDisplayIOServicePort(CGDirectDisplayID display)
+                       ^
+7 warnings generated.
+5 warnings generated.
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamousetap.m:25:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamousetap.h:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamouse.h:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:36:31: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+@interface SDLOpenGLContext : NSOpenGLContext {
+                              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamousetap.m:25:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamousetap.h:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamouse.h:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:41:23: warning: 'NSOpenGLPixelFormat' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+- (id)initWithFormat:(NSOpenGLPixelFormat *)format
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:115:12: note: 'NSOpenGLPixelFormat' has been explicitly marked deprecated here
+@interface NSOpenGLPixelFormat : NSObject <NSCoding>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamousetap.m:25:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamousetap.h:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoamouse.h:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:42:23: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+        shareContext:(NSOpenGLContext *)share;
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:36:3 warnings generated.
+31: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+@interface SDLOpenGLContext : NSOpenGLContext {
+                              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:41:23: warning: 'NSOpenGLPixelFormat' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+- (id)initWithFormat:(NSOpenGLPixelFormat *)format
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:115:12: note: 'NSOpenGLPixelFormat' has been explicitly marked deprecated here
+@interface NSOpenGLPixelFormat : NSObject <NSCoding>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:42:23: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+        shareContext:(NSOpenGLContext *)share;
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:40:23: warning: 'NSOpenGLPixelFormat' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+- (id)initWithFormat:(NSOpenGLPixelFormat *)format
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:115:12: note: 'NSOpenGLPixelFormat' has been explicitly marked deprecated here
+@interface NSOpenGLPixelFormat : NSObject <NSCoding>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:41:23: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+        shareContext:(NSOpenGLContext *)share
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:98:19: warning: 'view' is deprecated: first deprecated in macOS 10.14 [-Wdeprecated-declarations]
+        if ([self view] != [windowdata->nswindow contentView]) {
+                  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:193:36: note: property 'view' is declared deprecated here
+@property (nullable, weak) NSView *view NS_SWIFT_UI_ACTOR API_DEPRECATED("", macos(10.0,10.14));
+                                   ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:193:36: note: 'view' has been explicitly marked deprecated here
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:99:19: warning: 'setView:' is deprecated: first deprecated in macOS 10.14 - Use NSOpenGLView to provide OpenGL content in a Cocoa app. [-Wdeprecated-declarations]
+            [self setView:[windowdata->nswindow contentView]];
+                  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:193:36: note: property 'view' is declared deprecated here
+@property (nullable, weak) NSView *view NS_SWIFT_UI_ACTOR API_DEPRECATED("", macos(10.0,10.14));
+                                   ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:194:1: note: 'setView:' has been explicitly marked deprecated here
+- (void)setView:(nullable NSView *)view NS_SWIFT_UI_ACTOR API_DEPRECATED("Use NSOpenGLView to provide OpenGL content in a Cocoa app.", macos(10.0,10.14));
+^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:100:42: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+            if (self == [NSOpenGLContext currentContext]) {
+                                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:108:38: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+        if (self == [NSOpenGLContext currentContext]) {
+                                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:158:5: warning: 'NSOpenGLPixelFormatAttribute' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.) [-Wdeprecated-declarations]
+    NSOpenGLPixelFormatAttribute attr[32];
+    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:101:18: note: 'NSOpenGLPixelFormatAttribute' has been explicitly marked deprecated here
+typedef uint32_t NSOpenGLPixelFormatAttribute NS_OPENGL_DEPRECATED(10.0, 10.14);
+                 ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:159:5: warning: 'NSOpenGLPixelFormat' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+    NSOpenGLPixelFormat *fmt;
+    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:115:12: note: 'NSOpenGLPixelFormat' has been explicitly marked deprecated here
+@interface NSOpenGLPixelFormat : NSObject <NSCoding>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:161:5: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+    NSOpenGLContext *share_context = nil;
+    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:176:17: warning: 'NSOpenGLPFAAllowOfflineRenderers' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.) [-Wdeprecated-declarations]
+    attr[i++] = NSOpenGLPFAAllowOfflineRenderers;
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:84:5: note: 'NSOpenGLPFAAllowOfflineRenderers' has been explicitly marked deprecated here
+    NSOpenGLPFAAllowOfflineRenderers NS_OPENGL_ENUM_DEPRECATED(10.5, 10.14)  =  96,  /* allow use of offline renderers               */
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:180:9: warning: 'NSOpenGLPixelFormatAttribute' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.) [-Wdeprecated-declarations]
+        NSOpenGLPixelFormatAttribute profile = NSOpenGLProfileVersionLegacy;
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:101:18: note: 'NSOpenGLPixelFormatAttribute' has been explicitly marked deprecated here
+typedef uint32_t NSOpenGLPixelFormatAttribute NS_OPENGL_DEPRECATED(10.0, 10.14);
+                 ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:180:48: warning: 'NSOpenGLProfileVersionLegacy' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.) [-Wdeprecated-declarations]
+        NSOpenGLPixelFormatAttribute profile = NSOpenGLProfileVersionLegacy;
+                                               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:105:5: note: 'NSOpenGLProfileVersionLegacy' has been explicitly marked deprecated here
+    NSOpenGLProfileVersionLegacy     NS_OPENGL_ENUM_DEPRECATED(10.7, 10.14)  = 0x1000,   /* choose a Legacy/Pre-OpenGL 3.0 Implementation */
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:182:23: warning: 'NSOpenGLProfileVersion3_2Core' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.) [-Wdeprecated-declarations]
+            profile = NSOpenGLProfileVersion3_2Core;
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:106:5: note: 'NSOpenGLProfileVersion3_2Core' has been explicitly marked deprecated here
+    NSOpenGLProfileVersion3_2Core    NS_OPENGL_ENUM_DEPRECATED(10.7, 10.14)  = 0x3200,   /* choose an OpenGL 3.2 Core Implementation      */
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:184:21: warning: 'NSOpenGLPFAOpenGLProfile' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.) [-Wdeprecated-declarations]
+        attr[i++] = NSOpenGLPFAOpenGLProfile;
+                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:86:5: note: 'NSOpenGLPFAOpenGLProfile' has been explicitly marked deprecated here
+    NSOpenGLPFAOpenGLProfile         NS_OPENGL_ENUM_DEPRECATED(10.7, 10.14)  =  99,    /* specify an OpenGL Profile to use             */
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:188:17: warning: 'NSOpenGLPFAColorSize' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.) [-Wdeprecated-declarations]
+    attr[i++] = NSOpenGLPFAColorSize;
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:64:5: note: 'NSOpenGLPFAColorSize' has been explicitly marked deprecated here
+    NSOpenGLPFAColorSize             NS_OPENGL_ENUM_DEPRECATED(10.0, 10.14)  =   8,     /* number of color buffer bits                  */
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:191:17: warning: 'NSOpenGLPFADepthSize' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.) [-Wdeprecated-declarations]
+    attr[i++] = NSOpenGLPFADepthSize;
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:66:5: note: 'NSOpenGLPFADepthSize' has been explicitly marked deprecated here
+    NSOpenGLPFADepthSize             NS_OPENGL_ENUM_DEPRECATED(10.0, 10.14)  =  12,     /* number of depth buffer bits                  */
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:195:21: warning: 'NSOpenGLPFADoubleBuffer' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.) [-Wdeprecated-declarations]
+        attr[i++] = NSOpenGLPFADoubleBuffer;
+                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:62:5: note: 'NSOpenGLPFADoubleBuffer' has been explicitly marked deprecated here
+    NSOpenGLPFADoubleBuffer          NS_OPENGL_ENUM_DEPRECATED(10.0, 10.14)  =   5,     /* choose a double buffered pixel format        */
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:199:21: warning: 'NSOpenGLPFAStereo' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        attr[i++] = NSOpenGLPFAStereo;
+                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:89:5: note: 'NSOpenGLPFAStereo' has been explicitly marked deprecated here
+    NSOpenGLPFAStereo                API_DEPRECATED("", macos(10.0,10.12))     =   6,
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:203:21: warning: 'NSOpenGLPFAStencilSize' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.) [-Wdeprecated-declarations]
+        attr[i++] = NSOpenGLPFAStencilSize;
+                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:67:5: note: 'NSOpenGLPFAStencilSize' has been explicitly marked deprecated here
+    NSOpenGLPFAStencilSize           NS_OPENGL_ENUM_DEPRECATED(10.0, 10.14)  =  13,     /* number of stencil buffer bits                */
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:211:21: warning: 'NSOpenGLPFAAccumSize' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.) [-Wdeprecated-declarations]
+        attr[i++] = NSOpenGLPFAAccumSize;
+                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:68:5: note: 'NSOpenGLPFAAccumSize' has been explicitly marked deprecated here
+    NSOpenGLPFAAccumSize             NS_OPENGL_ENUM_DEPRECATED(10.0, 10.14)  =  14,     /* number of accum buffer bits                  */
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:216:21: warning: 'NSOpenGLPFASampleBuffers' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.) [-Wdeprecated-declarations]
+        attr[i++] = NSOpenGLPFASampleBuffers;
+                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:71:5: note: 'NSOpenGLPFASampleBuffers' has been explicitly marked deprecated here
+    NSOpenGLPFASampleBuffers         NS_OPENGL_ENUM_DEPRECATED(10.0, 10.14)  =  55,     /* number of multi sample buffers               */
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:221:21: warning: 'NSOpenGLPFASamples' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.) [-Wdeprecated-declarations]
+        attr[i++] = NSOpenGLPFASamples;
+                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:72:5: note: 'NSOpenGLPFASamples' has been explicitly marked deprecated here
+    NSOpenGLPFASamples               NS_OPENGL_ENUM_DEPRECATED(10.0, 10.14)  =  56,     /* number of samples per multi sample buffer    */
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:223:21: warning: 'NSOpenGLPFANoRecovery' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.) [-Wdeprecated-declarations]
+        attr[i++] = NSOpenGLPFANoRecovery;
+                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:79:5: note: 'NSOpenGLPFANoRecovery' has been explicitly marked deprecated here
+    NSOpenGLPFANoRecovery            NS_OPENGL_ENUM_DEPRECATED(10.0, 10.14)  =  72,     /* disable all failure recovery systems         */
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:228:25: warning: 'NSOpenGLPFAAccelerated' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.) [-Wdeprecated-declarations]
+            attr[i++] = NSOpenGLPFAAccelerated;
+                        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:80:5: note: 'NSOpenGLPFAAccelerated' has been explicitly marked deprecated here
+    NSOpenGLPFAAccelerated           NS_OPENGL_ENUM_DEPRECATED(10.0, 10.14)  =  73,     /* choose a hardware accelerated renderer       */
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:230:25: warning: 'NSOpenGLPFARendererID' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.) [-Wdeprecated-declarations]
+            attr[i++] = NSOpenGLPFARendererID;
+                        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:78:5: note: 'NSOpenGLPFARendererID' has been explicitly marked deprecated here
+    NSOpenGLPFARendererID            NS_OPENGL_ENUM_DEPRECATED(10.0, 10.14)  =  70,     /* request renderer by ID                       */
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:235:17: warning: 'NSOpenGLPFAScreenMask' is deprecated: first deprecated in macOS 10.14 - OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.) [-Wdeprecated-declarations]
+    attr[i++] = NSOpenGLPFAScreenMask;
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:83:5: note: 'NSOpenGLPFAScreenMask' has been explicitly marked deprecated here
+    NSOpenGLPFAScreenMask            NS_OPENGL_ENUM_DEPRECATED(10.0, 10.14)  =  84,     /* bit mask of supported physical screens       */
+    ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:239:33: warning: 'NSOpenGLPixelFormat' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+    fmt = [[NSOpenGLPixelFormat alloc] initWithAttributes:attr];
+                                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:115:12: note: 'NSOpenGLPixelFormat' has been explicitly marked deprecated here
+@interface NSOpenGLPixelFormat : NSObject <NSCoding>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:246:26: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+        share_context = (NSOpenGLContext*)SDL_GL_GetCurrentContext();
+                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:317:26: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+        [NSOpenGLContext clearCurrentContext];
+                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:349:5: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+    NSOpenGLContext *nscontext;
+    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:357:18: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+    nscontext = (NSOpenGLContext*)SDL_GL_GetCurrentContext();
+                 ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:360:50: warning: 'NSOpenGLCPSwapInterval' is deprecated: first deprecated in macOS 10.14 [-Wdeprecated-declarations]
+        [nscontext setValues:&value forParameter:NSOpenGLCPSwapInterval];
+                                                 ^~~~~~~~~~~~~~~~~~~~~~
+                                                 NSOpenGLContextParameterSwapInterval
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:258:39: note: 'NSOpenGLCPSwapInterval' has been explicitly marked deprecated here
+static const NSOpenGLContextParameter NSOpenGLCPSwapInterval API_DEPRECATED_WITH_REPLACEMENT("NSOpenGLContextParameterSwapInterval", macos(10.5,10.14)) = NSOpenGLContextParameterSwapInterval;
+                                      ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:373:5: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+    NSOpenGLContext *nscontext;
+    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:377:18: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+    nscontext = (NSOpenGLContext*)SDL_GL_GetCurrentContext();
+                 ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.m:379:50: warning: 'NSOpenGLCPSwapInterval' is deprecated: first deprecated in macOS 10.14 [-Wdeprecated-declarations]
+        [nscontext getValues:&value forParameter:NSOpenGLCPSwapInterval];
+                                                 ^~~~~~~~~~~~~~~~~~~~~~
+                                                 NSOpenGLContextParameterSwapInterval
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:258:39: note: 'NSOpenGLCPSwapInterval' has been explicitly marked deprecated here
+static const NSOpenGLContextParameter NSOpenGLCPSwapInterval API_DEPRECATED_WITH_REPLACEMENT("NSOpenGLContextParameterSwapInterval", macos(10.5,10.14)) = NSOpenGLContextParameterSwapInterval;
+                                      ^
+38 warnings generated.
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoashape.m:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:36:31: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+@interface SDLOpenGLContext : NSOpenGLContext {
+                              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoashape.m:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:41:23: warning: 'NSOpenGLPixelFormat' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+- (id)initWithFormat:(NSOpenGLPixelFormat *)format
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:115:12: note: 'NSOpenGLPixelFormat' has been explicitly marked deprecated here
+@interface NSOpenGLPixelFormat : NSObject <NSCoding>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoashape.m:26:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:42:23: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+        shareContext:(NSOpenGLContext *)share;
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoashape.m:38:37: warning: 'NSBorderlessWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    [windata->nswindow setStyleMask:NSBorderlessWindowMask];
+                                    ^~~~~~~~~~~~~~~~~~~~~~
+                                    NSWindowStyleMaskBorderless
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:884:32: note: 'NSBorderlessWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSBorderlessWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskBorderless", macos(10.0,10.12)) = NSWindowStyleMaskBorderless;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoashape.m:49:40: warning: 'graphicsContext' is deprecated: first deprecated in macOS 10.14 - Add instances of NSView to display content in a window. [-Wdeprecated-declarations]
+    data->context = [windata->nswindow graphicsContext];
+                                       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:864:59: note: property 'graphicsContext' is declared deprecated here
+@property (nullable, readonly, strong) NSGraphicsContext *graphicsContext API_DEPRECATED("Add instances of NSView to display content in a window.", macos(10.0,10.14));
+                                                          ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:864:59: note: 'graphicsContext' has been explicitly marked deprecated here
+5 warnings generated.
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.m:27:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:36:31: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+@interface SDLOpenGLContext : NSOpenGLContext {
+                              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.m:27:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:41:23: warning: 'NSOpenGLPixelFormat' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+- (id)initWithFormat:(NSOpenGLPixelFormat *)format
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:115:12: note: 'NSOpenGLPixelFormat' has been explicitly marked deprecated here
+@interface NSOpenGLPixelFormat : NSObject <NSCoding>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.m:27:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:42:23: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+        shareContext:(NSOpenGLContext *)share;
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+3 warnings generated.
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:38:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:36:31: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+@interface SDLOpenGLContext : NSOpenGLContext {
+                              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:38:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:41:23: warning: 'NSOpenGLPixelFormat' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+- (id)initWithFormat:(NSOpenGLPixelFormat *)format
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:115:12: note: 'NSOpenGLPixelFormat' has been explicitly marked deprecated here
+@interface NSOpenGLPixelFormat : NSObject <NSCoding>
+           ^
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:38:
+In file included from /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoavideo.h:40:
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoaopengl.h:42:23: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+        shareContext:(NSOpenGLContext *)share;
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:85:25: warning: 'NSLeftMouseUp' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    if ([event type] != NSLeftMouseUp) {
+                        ^~~~~~~~~~~~~
+                        NSEventTypeLeftMouseUp
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:66:26: note: 'NSLeftMouseUp' has been explicitly marked deprecated here
+static const NSEventType NSLeftMouseUp          API_DEPRECATED_WITH_REPLACEMENT("NSEventTypeLeftMouseUp", macos(10.0,10.12)) = NSEventTypeLeftMouseUp;
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:121:47: warning: 'NSFilenamesPboardType' is deprecated: first deprecated in macOS 10.14 - Create multiple pasteboard items with NSPasteboardTypeFileURL or kUTTypeFileURL instead [-Wdeprecated-declarations]
+    NSArray *types = [NSArray arrayWithObject:NSFilenamesPboardType];
+                                              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSPasteboard.h:312:32: note: 'NSFilenamesPboardType' has been explicitly marked deprecated here
+APPKIT_EXTERN NSPasteboardType NSFilenamesPboardType API_DEPRECATED("Create multiple pasteboard items with NSPasteboardTypeFileURL or kUTTypeFileURL instead", macos(10.0,10.14));
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:134:45: warning: 'NSFilenamesPboardType' is deprecated: first deprecated in macOS 10.14 - Create multiple pasteboard items with NSPasteboardTypeFileURL or kUTTypeFileURL instead [-Wdeprecated-declarations]
+    SDL_assert([desiredType isEqualToString:NSFilenamesPboardType]);
+                                            ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSPasteboard.h:312:32: note: 'NSFilenamesPboardType' has been explicitly marked deprecated here
+APPKIT_EXTERN NSPasteboardType NSFilenamesPboardType API_DEPRECATED("Create multiple pasteboard items with NSPasteboardTypeFileURL or kUTTypeFileURL instead", macos(10.0,10.14));
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:197:5: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+    NSOpenGLContext *currentContext = [NSOpenGLContext currentContext];
+    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:197:56: warning: 'NSOpenGLContext' is deprecated: first deprecated in macOS 10.14 - Please use Metal or MetalKit. [-Wdeprecated-declarations]
+    NSOpenGLContext *currentContext = [NSOpenGLContext currentContext];
+                                                       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGL.h:184:12: note: 'NSOpenGLContext' has been explicitly marked deprecated here
+@interface NSOpenGLContext : NSObject <NSLocking>
+           ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:223:17: warning: 'NSBorderlessWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        style = NSBorderlessWindowMask;
+                ^~~~~~~~~~~~~~~~~~~~~~
+                NSWindowStyleMaskBorderless
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:884:32: note: 'NSBorderlessWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSBorderlessWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskBorderless", macos(10.0,10.12)) = NSWindowStyleMaskBorderless;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:226:21: warning: 'NSBorderlessWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+            style = NSBorderlessWindowMask;
+                    ^~~~~~~~~~~~~~~~~~~~~~
+                    NSWindowStyleMaskBorderless
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:884:32: note: 'NSBorderlessWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSBorderlessWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskBorderless", macos(10.0,10.12)) = NSWindowStyleMaskBorderless;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:228:22: warning: 'NSTitledWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+            style = (NSTitledWindowMask|NSClosableWindowMask|NSMiniaturizableWindowMask);
+                     ^~~~~~~~~~~~~~~~~~
+                     NSWindowStyleMaskTitled
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:885:32: note: 'NSTitledWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSTitledWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskTitled", macos(10.0,10.12)) = NSWindowStyleMaskTitled;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:228:41: warning: 'NSClosableWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+            style = (NSTitledWindowMask|NSClosableWindowMask|NSMiniaturizableWindowMask);
+                                        ^~~~~~~~~~~~~~~~~~~~
+                                        NSWindowStyleMaskClosable
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:886:32: note: 'NSClosableWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSClosableWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskClosable", macos(10.0,10.12)) = NSWindowStyleMaskClosable;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:228:62: warning: 'NSMiniaturizableWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+            style = (NSTitledWindowMask|NSClosableWindowMask|NSMiniaturizableWindowMask);
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                             NSWindowStyleMaskMiniaturizable
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:887:32: note: 'NSMiniaturizableWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSMiniaturizableWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskMiniaturizable", macos(10.0,10.12)) = NSWindowStyleMaskMiniaturizable;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:231:22: warning: 'NSResizableWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+            style |= NSResizableWindowMask;
+                     ^~~~~~~~~~~~~~~~~~~~~
+                     NSWindowStyleMaskResizable
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:888:32: note: 'NSResizableWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSResizableWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskResizable", macos(10.0,10.12)) = NSWindowStyleMaskResizable;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:312:11: warning: 'setAcceptsTouchEvents:' is deprecated: first deprecated in macOS 10.12.2 - Use allowedTouchTypes instead [-Wdeprecated-declarations]
+    [view setAcceptsTouchEvents:YES];
+          ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSView.h:227:16: note: property 'acceptsTouchEvents' is declared deprecated here
+@property BOOL acceptsTouchEvents API_DEPRECATED("Use allowedTouchTypes instead", macos(10.6,10.12.2));
+               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSView.h:227:16: note: 'setAcceptsTouchEvents:' has been explicitly marked deprecated here
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:597:61: warning: 'NSAlphaShiftKeyMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    const unsigned int newflags = [NSEvent modifierFlags] & NSAlphaShiftKeyMask;
+                                                            ^~~~~~~~~~~~~~~~~~~
+                                                            NSEventModifierFlagCapsLock
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:177:35: note: 'NSAlphaShiftKeyMask' has been explicitly marked deprecated here
+static const NSEventModifierFlags NSAlphaShiftKeyMask         API_DEPRECATED_WITH_REPLACEMENT("NSEventModifierFlagCapsLock", macos(10.0,10.12)) = NSEventModifierFlagCapsLock;
+                                  ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:598:75: warning: 'NSAlphaShiftKeyMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    _data->videodata->modifierFlags = (_data->videodata->modifierFlags & ~NSAlphaShiftKeyMask) | newflags;
+                                                                          ^~~~~~~~~~~~~~~~~~~
+                                                                          NSEventModifierFlagCapsLock
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:177:35: note: 'NSAlphaShiftKeyMask' has been explicitly marked deprecated here
+static const NSEventModifierFlags NSAlphaShiftKeyMask         API_DEPRECATED_WITH_REPLACEMENT("NSEventModifierFlagCapsLock", macos(10.0,10.12)) = NSEventModifierFlagCapsLock;
+                                  ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:644:29: warning: 'NSTitledWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    SetWindowStyle(window, (NSTitledWindowMask|NSClosableWindowMask|NSMiniaturizableWindowMask|NSResizableWindowMask));
+                            ^~~~~~~~~~~~~~~~~~
+                            NSWindowStyleMaskTitled
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:885:32: note: 'NSTitledWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSTitledWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskTitled", macos(10.0,10.12)) = NSWindowStyleMaskTitled;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:644:48: warning: 'NSClosableWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    SetWindowStyle(window, (NSTitledWindowMask|NSClosableWindowMask|NSMiniaturizableWindowMask|NSResizableWindowMask));
+                                               ^~~~~~~~~~~~~~~~~~~~
+                                               NSWindowStyleMaskClosable
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:886:32: note: 'NSClosableWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSClosableWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskClosable", macos(10.0,10.12)) = NSWindowStyleMaskClosable;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:644:69: warning: 'NSMiniaturizableWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    SetWindowStyle(window, (NSTitledWindowMask|NSClosableWindowMask|NSMiniaturizableWindowMask|NSResizableWindowMask));
+                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                    NSWindowStyleMaskMiniaturizable
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:887:32: note: 'NSMiniaturizableWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSMiniaturizableWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskMiniaturizable", macos(10.0,10.12)) = NSWindowStyleMaskMiniaturizable;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:644:96: warning: 'NSResizableWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    SetWindowStyle(window, (NSTitledWindowMask|NSClosableWindowMask|NSMiniaturizableWindowMask|NSResizableWindowMask));
+                                                                                               ^~~~~~~~~~~~~~~~~~~~~
+                                                                                               NSWindowStyleMaskResizable
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:888:32: note: 'NSResizableWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSResizableWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskResizable", macos(10.0,10.12)) = NSWindowStyleMaskResizable;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:697:53: warning: 'NSResizableWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    SetWindowStyle(window, GetWindowStyle(window) | NSResizableWindowMask);
+                                                    ^~~~~~~~~~~~~~~~~~~~~
+                                                    NSWindowStyleMaskResizable
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:888:32: note: 'NSResizableWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSResizableWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskResizable", macos(10.0,10.12)) = NSWindowStyleMaskResizable;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:711:29: warning: 'NSTitledWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    SetWindowStyle(window, (NSTitledWindowMask|NSClosableWindowMask|NSMiniaturizableWindowMask|NSResizableWindowMask));
+                            ^~~~~~~~~~~~~~~~~~
+                            NSWindowStyleMaskTitled
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:885:32: note: 'NSTitledWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSTitledWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskTitled", macos(10.0,10.12)) = NSWindowStyleMaskTitled;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:711:48: warning: 'NSClosableWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    SetWindowStyle(window, (NSTitledWindowMask|NSClosableWindowMask|NSMiniaturizableWindowMask|NSResizableWindowMask));
+                                               ^~~~~~~~~~~~~~~~~~~~
+                                               NSWindowStyleMaskClosable
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:886:32: note: 'NSClosableWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSClosableWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskClosable", macos(10.0,10.12)) = NSWindowStyleMaskClosable;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:711:69: warning: 'NSMiniaturizableWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    SetWindowStyle(window, (NSTitledWindowMask|NSClosableWindowMask|NSMiniaturizableWindowMask|NSResizableWindowMask));
+                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                    NSWindowStyleMaskMiniaturizable
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:887:32: note: 'NSMiniaturizableWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSMiniaturizableWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskMiniaturizable", macos(10.0,10.12)) = NSWindowStyleMaskMiniaturizable;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:711:96: warning: 'NSResizableWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+    SetWindowStyle(window, (NSTitledWindowMask|NSClosableWindowMask|NSMiniaturizableWindowMask|NSResizableWindowMask));
+                                                                                               ^~~~~~~~~~~~~~~~~~~~~
+                                                                                               NSWindowStyleMaskResizable
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:888:32: note: 'NSResizableWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSResizableWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskResizable", macos(10.0,10.12)) = NSWindowStyleMaskResizable;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:842:41: warning: 'NSControlKeyMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        if (([theEvent modifierFlags] & NSControlKeyMask) &&
+                                        ^~~~~~~~~~~~~~~~
+                                        NSEventModifierFlagControl
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h:179:35: note: 'NSControlKeyMask' has been explicitly marked deprecated here
+static const NSEventModifierFlags NSControlKeyMask            API_DEPRECATED_WITH_REPLACEMENT("NSEventModifierFlagControl", macos(10.0,10.12)) = NSEventModifierFlagControl;
+                                  ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:1171:22: warning: 'NSBorderlessWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        if (style == NSBorderlessWindowMask) {
+                     ^~~~~~~~~~~~~~~~~~~~~~
+                     NSWindowStyleMaskBorderless
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:884:32: note: 'NSBorderlessWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSBorderlessWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskBorderless", macos(10.0,10.12)) = NSWindowStyleMaskBorderless;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:1176:21: warning: 'NSResizableWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        if (style & NSResizableWindowMask) {
+                    ^~~~~~~~~~~~~~~~~~~~~
+                    NSWindowStyleMaskResizable
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:888:32: note: 'NSResizableWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSResizableWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskResizable", macos(10.0,10.12)) = NSWindowStyleMaskResizable;
+                               ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:1204:15: warning: 'setOneShot:' is deprecated: first deprecated in macOS 10.14 - This property does not do anything and should not be used [-Wdeprecated-declarations]
+    [nswindow setOneShot:NO];
+              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:866:35: note: property 'oneShot' is declared deprecated here
+@property (getter=isOneShot) BOOL oneShot API_DEPRECATED("This property does not do anything and should not be used", macos(10.0,10.14));
+                                  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:866:35: note: 'setOneShot:' has been explicitly marked deprecated here
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:1271:26: warning: 'setWantsBestResolutionOpenGLSurface:' is deprecated: first deprecated in macOS 10.14 - Use NSOpenGLView instead. [-Wdeprecated-declarations]
+            [contentView setWantsBestResolutionOpenGLSurface:YES];
+                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGLView.h:47:16: note: property 'wantsBestResolutionOpenGLSurface' is declared deprecated here
+@property BOOL wantsBestResolutionOpenGLSurface API_DEPRECATED("Use NSOpenGLView instead.", macos(10.7,10.14));
+               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSOpenGLView.h:47:16: note: 'setWantsBestResolutionOpenGLSurface:' has been explicitly marked deprecated here
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:1279:76: warning: 'kUTTypeFileURL' is deprecated: first deprecated in macOS 12.0 - Use UTTypeFileURL instead. [-Wdeprecated-declarations]
+    [nswindow registerForDraggedTypes:[NSArray arrayWithObject:(NSString *)kUTTypeFileURL]];
+                                                                           ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Headers/UTCoreTypes.h:211:26: note: 'kUTTypeFileURL' has been explicitly marked deprecated here
+extern const CFStringRef kUTTypeFileURL                              API_DEPRECATED("Use UTTypeFileURL instead.", ios(3.0, 15.0), macos(10.4, 12.0), tvos(9.0, 15.0), watchos(1.0, 8.0));
+                         ^
+/Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/SDL2-2.0.5/src/video/cocoa/SDL_cocoawindow.m:1537:32: warning: 'NSBorderlessWindowMask' is deprecated: first deprecated in macOS 10.12 [-Wdeprecated-declarations]
+        [nswindow setStyleMask:NSBorderlessWindowMask];
+                               ^~~~~~~~~~~~~~~~~~~~~~
+                               NSWindowStyleMaskBorderless
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSWindow.h:884:32: note: 'NSBorderlessWindowMask' has been explicitly marked deprecated here
+static const NSWindowStyleMask NSBorderlessWindowMask API_DEPRECATED_WITH_REPLACEMENT("NSWindowStyleMaskBorderless", macos(10.0,10.12)) = NSWindowStyleMaskBorderless;
+                               ^
+33 warnings generated.
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_audiodev.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_d3dmath.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_yuv_mmx.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_render_d3d.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_render_d3d11.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_render_gles.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_render_gles2.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_shaders_gles2.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_render_psp.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_egl.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_audiodev.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_d3dmath.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_yuv_mmx.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_render_d3d.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_render_d3d11.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_render_gles.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_render_gles2.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_shaders_gles2.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_render_psp.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: libSDL2.a(SDL_egl.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/lib/libSDL2.a(SDL_audiodev.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/lib/libSDL2.a(SDL_d3dmath.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/lib/libSDL2.a(SDL_yuv_mmx.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/lib/libSDL2.a(SDL_render_d3d.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/lib/libSDL2.a(SDL_render_d3d11.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/lib/libSDL2.a(SDL_render_gles.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/lib/libSDL2.a(SDL_render_gles2.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/lib/libSDL2.a(SDL_shaders_gles2.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/lib/libSDL2.a(SDL_render_psp.c.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/florianblanchard/42_works/Scop/game/target/debug/build/sdl2-sys-7e2c56f1ea66bd72/out/lib/libSDL2.a(SDL_egl.c.o) has no symbols
